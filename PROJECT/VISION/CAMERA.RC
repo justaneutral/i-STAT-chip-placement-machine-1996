@@ -1,0 +1,156 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "camerarsc.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "camera.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XVLICON                 ICON    DISCARDABLE     "camera.ico"
+XVLICON2                ICON    DISCARDABLE     "camera2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XVLMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Setup"
+    BEGIN
+        MENUITEM "&About...",                   IDM_ABOUT
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Image"
+    BEGIN
+        POPUP "&Grab"
+        BEGIN
+            MENUITEM "&Grab 1 Image",               IDM_GRABIMG
+        END
+    END
+    POPUP "Camera"
+    BEGIN
+        MENUITEM "Camera # 1",                  IDM_SELECT_CAMERA_1
+        MENUITEM "Camera # 2",                  IDM_SELECT_CAMERA_2
+        MENUITEM "Wafer axes",                  IDM_FFT
+        MENUITEM "Packet axes - type 1",        IDM_PACKET_FINDER
+        MENUITEM "Packet axes - type 2",        IDM_PACKET_FINDER2
+        MENUITEM "Packet axes - type 3",        IDM_PACKET_FINDER3
+        MENUITEM "Wafer top edge",              IDM_top_edge
+        MENUITEM "Wafer bottom edge",           IDM_bottom_edge
+        MENUITEM "Wafer left edge",             IDM_left_edge
+        MENUITEM "Wafer right edge",            IDM_right_edge
+    END
+    POPUP "FOV"
+    BEGIN
+        MENUITEM "Update",                      IDM_FOV_UPDATE
+        MENUITEM "Recreate",                    IDM_FOV_RECREATE
+        MENUITEM "SAVE",                        IDM_FOV_SAVE
+    END
+    POPUP "Calibration"
+    BEGIN
+        MENUITEM "Base image light level",      IDM_BASE_DETECTOR
+        MENUITEM "Pick Point Centre Coordinates", IDM_HALL_COORDINATES
+        MENUITEM "Place Point Centre Coordinates", IDM_HALL_COORDINATES_2
+    END
+    POPUP "Operator input"
+    BEGIN
+        MENUITEM "Fidutial location",           IDM_FIDUCIAL
+        MENUITEM "Centering and chip position correction.", 
+                                                IDM_INITIAL_FIDUCIAL_POINT
+    END
+    MENUITEM "Left",                        IDM_FID_X_DEC
+    MENUITEM "Right",                       IDM_FID_X_INC
+    MENUITEM "Up",                          IDM_FID_Y_DEC
+    MENUITEM "Down",                        IDM_FID_Y_INC
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUTBOX DIALOG DISCARDABLE  22, 8, 144, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_DLGFRAME | WS_SYSMENU
+FONT 10, "System"
+BEGIN
+    CTEXT           "for Microsoft ® Windows",-1,33,39,92,8
+    CTEXT           "CLM Subsystem",-1,36,7,88,9
+    CTEXT           "Version 1.00",-1,49,17,62,9
+    DEFPUSHBUTTON   "OK",IDOK,63,62,32,14,WS_GROUP
+    ICON            "XVLICON",-1,8,10,16,21
+    CTEXT           "by Stelex Inc",-1,46,28,69,8,NOT WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""camerarsc.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""camera.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

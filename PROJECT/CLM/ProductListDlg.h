@@ -1,0 +1,61 @@
+#if !defined(AFX_PRODUCTLISTDLG_H__AC8CC303_5176_11D2_B36B_00C04FAD4084__INCLUDED_)
+#define AFX_PRODUCTLISTDLG_H__AC8CC303_5176_11D2_B36B_00C04FAD4084__INCLUDED_
+
+#if _MSC_VER >= 1000
+#pragma once
+#endif // _MSC_VER >= 1000
+// ProductListDlg.h : header file
+//
+
+#include <afxcmn.h>
+#include <afxtempl.h>
+
+
+/////////////////////////////////////////////////////////////////////////////
+// CProductListDlg dialog
+
+class CProductListDlg : public CDialog
+{
+// Construction
+public:
+	CProductListDlg(CWnd* pParent = NULL);   // standard constructor
+
+    CArray<CString,CString>  ChipName;
+	CArray<CString,CString>	 ProductID;
+	
+	
+	void SaveProduct();
+	void ReadProduct();
+
+
+// Dialog Data
+	//{{AFX_DATA(CProductListDlg)
+	enum { IDD = IDD_Product_list };
+	CListCtrl	m_list;
+	//}}AFX_DATA
+
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CProductListDlg)
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	//}}AFX_VIRTUAL
+
+// Implementation
+protected:
+
+	// Generated message map functions
+	//{{AFX_MSG(CProductListDlg)
+	virtual BOOL OnInitDialog();
+	afx_msg void OnBUTTONaddProduct();
+	afx_msg void OnBUTTONdeleteProduct();
+	afx_msg void OnBUTTONeditProduct();
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Developer Studio will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_PRODUCTLISTDLG_H__AC8CC303_5176_11D2_B36B_00C04FAD4084__INCLUDED_)

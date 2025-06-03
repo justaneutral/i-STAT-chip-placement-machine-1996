@@ -1,0 +1,1100 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Diagnostic DIALOGEX 20, 20, 515, 162
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Test manipulator."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Down ",IDC_RADIO_PLUNGE_STAGE_UP,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_TABSTOP,28,73,29,
+                    10,WS_EX_RIGHT
+    CONTROL         "Up",IDC_RADIO_PLUNGE_STAGE_DOWN,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,58,73,28,10
+    CONTROL         "Is down",IDC_CHECK_PLUNGE_DOWN_,"Button",
+                    BS_AUTOCHECKBOX,26,83,41,10,WS_EX_RIGHT
+    CONTROL         "Is up",IDC_CHECK_PLUNGE_UP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,83,31,10
+    GROUPBOX        "Plunge",IDC_STATIC_PLUNGE,14,56,96,103
+    CONTROL         "Open  ",IDC_RADIO_WAFER_OPEN,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,
+                    27,31,29,10,WS_EX_RIGHT
+    CONTROL         "Close",IDC_RADIO_WAFER_CLOSE,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,57,31,27,10
+    CONTROL         "Is open",IDC_CHECK_WAFER_OPEN,"Button",BS_AUTOCHECKBOX,
+                    17,41,39,10,WS_EX_RIGHT
+    CONTROL         "Is closed",IDC_CHECK_WAFER_CLOSED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,58,41,42,10
+    GROUPBOX        "Wafer",IDC_STATIC_WAFER,15,20,87,33
+    CONTROL         "On    ",IDC_RADIO_PLUNGE_VACUUM_ON,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_TABSTOP,28,104,29,
+                    10,WS_EX_RIGHT
+    CONTROL         "Off",IDC_RADIO_PLUNGE_VACUUM_OFF,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,58,104,28,10
+    CONTROL         "Is on",IDC_CHECK_PLUNGE_VACUUM_ON,"Button",
+                    BS_AUTOCHECKBOX,26,114,31,10,WS_EX_RIGHT
+    CONTROL         "Is off",IDC_CHECK_PLUNGE_VACUUM_OFF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,114,31,10
+    GROUPBOX        "Stage",IDC_STATIC_PLUNGE_STAGE,16,64,92,30
+    GROUPBOX        "Vacuum",IDC_STATIC_PLUNGE_VACUUM,16,95,91,30
+    CONTROL         "Up    ",IDC_RADIO_NEEDLES_UP,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_TABSTOP,28,134,29,
+                    10,WS_EX_RIGHT
+    CONTROL         "Down",IDC_RADIO_NEEDLES_DOWN,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,58,134,28,10
+    CONTROL         "Are up",IDC_CHECK_NEEDLES_UP,"Button",BS_AUTOCHECKBOX,
+                    19,145,36,10,WS_EX_RIGHT
+    CONTROL         "Are down",IDC_CHECK_NEEDLES_DOWN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,145,44,10
+    GROUPBOX        "Needles",IDC_STATIC_NEEDLES,16,126,91,30
+    CONTROL         "Open  ",IDC_RADIO_GRIP_POSITION_OPEN,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,
+                    130,34,29,10,WS_EX_RIGHT
+    CONTROL         "Close",IDC_RADIO_GRIP_POSITION_CLOSE,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,160,34,28,10
+    CONTROL         "Are open",IDC_CHECK_GRIP_POSITION_OPEN,"Button",
+                    BS_AUTOCHECKBOX,119,44,41,10,WS_EX_RIGHT
+    CONTROL         "Are closed",IDC_CHECK_GRIP_POSITION_CLOSED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,44,46,10
+    GROUPBOX        "Chip Gripers",IDC_STATIC_GRIP,113,18,99,125
+    CONTROL         "On    ",IDC_RADIO_GRIP_VACUUM_ON,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,
+                    130,64,29,10,WS_EX_RIGHT
+    CONTROL         "Off",IDC_RADIO_GRIP_VACUUM_OFF,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,160,64,28,10
+    CONTROL         "Is on",IDC_CHECK_GRIP_VACUUM_ON,"Button",
+                    BS_AUTOCHECKBOX,129,75,31,10,WS_EX_RIGHT
+    CONTROL         "Is off",IDC_CHECK_GRIP_VACUUM_OFF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,162,75,31,10
+    GROUPBOX        "Position",IDC_STATIC_GRIP_POSITION,116,25,94,30
+    GROUPBOX        "Vacuum",IDC_STATIC_GRIP_VACUUM,116,56,91,30
+    CONTROL         "On    ",IDC_RADIO_GRIP_AIR_ON,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,
+                    130,95,29,10,WS_EX_RIGHT
+    CONTROL         "Off",IDC_RADIO_GRIP_AIR_OFF,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,160,95,28,10
+    CONTROL         "Is on",IDC_CHECK_GRIP_AIR_ON,"Button",BS_AUTOCHECKBOX,
+                    129,106,30,10,WS_EX_RIGHT
+    CONTROL         "Is off",IDC_CHECK_GRIP_AIR_OFF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,106,31,10
+    GROUPBOX        "Air",IDC_STATIC_GRIP_AIR,116,87,91,30
+    CONTROL         "Yes",IDC_CHECK_CHIP_PRESENT,"Button",BS_AUTOCHECKBOX,
+                    132,128,28,10,WS_EX_RIGHT
+    CONTROL         "No",IDC_CHECK_CHIP_NOT_PRESENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,128,25,10
+    GROUPBOX        "Chip Present",IDC_STATIC_VACUUM,117,119,90,22
+    GROUPBOX        "IO devices",IDC_STATIC_IO,12,11,204,149
+    GROUPBOX        "Motion ----------------- Target --------- Current -------- Velocity ---- Acceleration ---- Torque ",
+                    IDC_STATIC_QCI,217,11,291,149
+    PUSHBUTTON      "Home",IDC_BUTTON_QCI_HOME,277,124,26,12
+    PUSHBUTTON      "Start",IDC_BUTTON_QCI_REFRESH,250,124,26,12
+    CONTROL         "wafer 'y'",IDC_CHECK_QCI1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,229,21,40,10,WS_EX_RIGHT
+    CONTROL         "wafer 'x'",IDC_CHECK_QCI2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,230,32,39,10,WS_EX_RIGHT
+    CONTROL         "gantry 'x'",IDC_CHECK_QCI3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,230,44,39,10,WS_EX_RIGHT
+    CONTROL         "gantry 'y'",IDC_CHECK_QCI4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,54,45,10,WS_EX_RIGHT
+    CONTROL         "stretch 'a'",IDC_CHECK_QCI5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,225,65,44,10,WS_EX_RIGHT
+    CONTROL         "fetcher 'x'",IDC_CHECK_QCI6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,76,45,10,WS_EX_RIGHT
+    CONTROL         "magazine 'z'",IDC_CHECK_QCI7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,87,49,10,WS_EX_RIGHT
+    PUSHBUTTON      "Stop",IDC_BUTTON_QCI_STOP,223,124,26,12
+    EDITTEXT        IDC_EDIT_QCI_TP_1,271,20,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_1,315,20,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_1,359,20,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_1,403,20,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_1,447,20,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TP_2,271,31,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_2,315,31,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_2,359,31,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_2,403,31,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_2,447,31,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TP_3,271,42,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_3,315,42,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_3,359,42,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_3,403,42,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_3,447,42,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TP_4,271,53,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_4,315,53,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_4,359,53,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_4,403,53,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_4,447,53,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TP_5,271,64,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_5,315,64,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_5,359,64,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_5,403,64,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_5,447,64,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TP_6,271,75,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_6,315,75,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_6,359,75,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_6,403,75,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_6,447,75,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TP_7,271,86,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_CP_7,315,86,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_VE_7,359,86,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_AC_7,403,86,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_QCI_TQ_7,447,86,45,12,ES_CENTER
+    CONTROL         "chip grip 'a'",IDC_CHECK_SMAC_R,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,220,99,49,10,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_SMAC_TP_R,271,97,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_CP_R,315,97,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_VE_R,359,97,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_AC_R,403,97,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_TQ_R,447,97,45,12,ES_CENTER
+    CONTROL         "chip grip 'z'",IDC_CHECK_SMAC_L,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,220,110,49,10,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_SMAC_TP_L,271,108,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_CP_L,315,108,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_VE_L,359,108,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_AC_L,403,108,45,12,ES_CENTER
+    EDITTEXT        IDC_EDIT_SMAC_TQ_L,447,108,45,12,ES_CENTER
+    CONTROL         "",IDC_RADIO_QCI1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,495,22,8,8
+    CONTROL         "",IDC_RADIO_QCI2,"Button",BS_AUTORADIOBUTTON,495,33,8,8
+    CONTROL         "",IDC_RADIO_QCI3,"Button",BS_AUTORADIOBUTTON,495,44,8,8
+    CONTROL         "",IDC_RADIO_QCI4,"Button",BS_AUTORADIOBUTTON,495,55,8,8
+    CONTROL         "",IDC_RADIO_QCI5,"Button",BS_AUTORADIOBUTTON,495,66,8,8
+    CONTROL         "",IDC_RADIO_QCI6,"Button",BS_AUTORADIOBUTTON,495,76,8,8
+    CONTROL         "",IDC_RADIO_QCI7,"Button",BS_AUTORADIOBUTTON,495,87,8,8
+    CONTROL         "",IDC_RADIO_SMAC_R,"Button",BS_AUTORADIOBUTTON,495,99,8,
+                    8
+    CONTROL         "",IDC_RADIO_SMAC_L,"Button",BS_AUTORADIOBUTTON,495,111,
+                    8,8
+    CONTROL         "grip 'a' and 'z'",IDC_RADIO_SMAC_LR,"Button",
+                    BS_AUTORADIOBUTTON,447,123,56,8,WS_EX_RIGHT
+    PUSHBUTTON      "Done",IDOK,303,124,25,12
+    LTEXT           "Date",IDC_Date,37,0,100,8
+    LTEXT           "Time",IDC_Time,137,0,100,8
+    PUSHBUTTON      "Update",IDC_Update,329,124,31,12
+    CONTROL         "Fast Mode",IDC_CHECK_FAST,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,253,146,49,10
+    CONTROL         "Block Mode",IDC_CHECK_BLOCK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,309,146,54,10
+END
+
+IDD_About DIALOG DISCARDABLE  34, 22, 265, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Test Manipulator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_Blossom,IDC_STATIC,10,10,20,20
+    LTEXT           "Test Manipulator for chip loader.",IDC_STATIC,40,10,119,
+                    8
+    LTEXT           "Copyright © 1998, pdourbal@stelex.com",IDC_STATIC,40,25,
+                    130,8
+    DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
+    EDITTEXT        IDC_STATIC_colored,11,46,247,45,ES_AUTOHSCROLL
+    CONTROL         "colored button",IDC_BUTTON_colored,"Button",
+                    BS_OWNERDRAW | BS_NOTIFY | WS_TABSTOP,11,97,247,51
+END
+
+IDD_CREATE_USER DIALOG DISCARDABLE  0, 0, 251, 170
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "User Identification. Create user. Enter user name and password."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,191,149,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,149,50,14
+    EDITTEXT        IDC_USER_NAME,83,6,153,14
+    LTEXT           "User Name:",IDC_STATIC,15,7,38,8
+    EDITTEXT        IDC_PASSWORD,83,79,154,14,ES_PASSWORD
+    LTEXT           "Password:",IDC_STATIC,17,79,38,8
+    EDITTEXT        IDC_PASSWORD_CONFIRM,83,97,153,14,ES_PASSWORD
+    LTEXT           "Confirm password:",IDC_STATIC,14,98,64,8
+    CONTROL         "Supervisor permissions",IDC_CHECK_PERMISSIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,83,127,111,10
+    EDITTEXT        IDC_USER_ID,84,40,153,14
+    LTEXT           "User ID:",IDC_STATIC,16,40,27,8
+END
+
+idd_very_common_dialog DIALOG DISCARDABLE  0, 0, 275, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Enter Parameter..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,218,24,50,14
+    EDITTEXT        idc_very_common_edit,7,10,205,14,ES_AUTOHSCROLL
+END
+
+IDD_get_user DIALOG DISCARDABLE  0, 0, 222, 101
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 14, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,177,56,31,9
+    PUSHBUTTON      "Cancel",IDCANCEL,142,56,34,9
+    EDITTEXT        IDC_CURRENT_USER_NAME,53,13,155,14,ES_AUTOHSCROLL
+    LTEXT           "Operator ID",IDC_STATIC,12,15,39,8
+    EDITTEXT        IDC_CURRENT_PASSWORD,53,31,155,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,11,32,34,8
+    LTEXT           "Please type in your ID, then press ""Tab"" key and",
+                    IDC_STATIC,12,74,147,8
+    LTEXT           "enter your password, followed by ""Enter"" key.",
+                    IDC_STATIC,12,83,139,8
+END
+
+IDD_motor_parameters DIALOG DISCARDABLE  0, 0, 248, 164
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,21,139,50,14
+    EDITTEXT        IDC_motor_parameters_velocity,10,32,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_acceleration,9,64,75,14,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Operation Mode",IDC_STATIC,7,7,79,109
+    LTEXT           "Velocity",IDC_STATIC,13,20,36,8
+    LTEXT           "Acceleration",IDC_STATIC,13,54,40,8
+    LTEXT           "Torque",IDC_STATIC,14,86,26,8
+    EDITTEXT        IDC_motor_parameters_torque,9,98,75,14,ES_AUTOHSCROLL
+    GROUPBOX        "Homming Mode",IDC_STATIC,90,7,151,150
+    LTEXT           "Velocity",IDC_STATIC,94,26,26,8
+    LTEXT           "Acceleration",IDC_STATIC,94,44,40,8
+    LTEXT           "Torque",IDC_STATIC,94,65,24,8
+    LTEXT           "Correction start",IDC_STATIC,94,84,48,8
+    LTEXT           "Correction end",IDC_STATIC,94,103,47,8
+    LTEXT           "Distance",IDC_STATIC,94,122,29,8
+    LTEXT           "Tolerance",IDC_STATIC,94,140,33,8
+    EDITTEXT        IDC_motor_parameters_homming_velocity,149,23,88,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_homming_acceleration,149,41,88,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_homming_torque,149,61,88,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_homming_correction_start,149,80,87,
+                    15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_homming_correction_end,149,99,87,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_homming_distance,149,118,87,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_motor_parameters_homming_tolerance,149,137,87,14,
+                    ES_AUTOHSCROLL
+END
+
+IDD_pick_place_point DIALOG DISCARDABLE  0, 0, 172, 100
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,79,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,31,79,50,14
+    LTEXT           "X coordinate",IDC_STATIC,10,9,41,8
+    LTEXT           "Y coordinate",IDC_STATIC,10,27,41,8
+    LTEXT           "Z coordinate",IDC_STATIC,9,46,41,8
+    LTEXT           "Rotation angle",IDC_STATIC,8,62,47,8
+    EDITTEXT        IDC_pick_place_x,58,7,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_pick_place_y,58,24,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_pick_place_z,58,42,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_pick_place_angle,58,60,106,14,ES_AUTOHSCROLL
+END
+
+IDD_wafer_reference_point DIALOG DISCARDABLE  0, 0, 249, 95
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,192,18,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,192,34,50,14
+    GROUPBOX        "Wafer Reference Point",IDC_STATIC,7,7,235,81
+    EDITTEXT        IDC_wafer_reference_point_x,79,17,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_wafer_reference_point_y,79,34,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_wafer_reference_point_delta_x,79,51,109,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_wafer_reference_point_delta_y,79,68,109,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "X coordinate",IDC_STATIC,14,20,41,8
+    LTEXT           "Y coordinate",IDC_STATIC,14,36,41,8
+    LTEXT           "X correction",IDC_STATIC,14,53,39,8
+    LTEXT           "Y correction",IDC_STATIC,14,70,39,8
+END
+
+IDD_base_cmera_parameters DIALOG DISCARDABLE  0, 0, 187, 107
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,38,82,50,14
+    GROUPBOX        "Base camera parameters",IDC_STATIC,7,7,173,93
+    LTEXT           "X coordinate",IDC_STATIC,10,26,41,8
+    LTEXT           "Y coordinate",IDC_STATIC,10,45,41,8
+    LTEXT           "Rotation angle",IDC_STATIC,10,63,47,8
+    EDITTEXT        IDC_base_cmera_parameters_x,57,23,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_base_cmera_parameters_y,57,41,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_base_cmera_parameters_angle,57,61,120,14,
+                    ES_AUTOHSCROLL
+END
+
+IDD_wafer_camera_parameters DIALOG DISCARDABLE  0, 0, 200, 193
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,166,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,47,166,50,14
+    GROUPBOX        "Wafer camera parameters",IDC_STATIC,7,7,186,179
+    LTEXT           "X coordinate",IDC_STATIC,11,26,41,8
+    LTEXT           "Y coordinate",IDC_STATIC,11,45,41,8
+    LTEXT           "Rotation angle",IDC_STATIC,11,63,47,8
+    EDITTEXT        IDC_wafer_cmera_parameters_x,72,23,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_wafer_cmera_parameters_y,72,41,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_wafer_cmera_parameters_angle,72,61,117,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Seek forward  X",IDC_STATIC,12,88,52,8
+    EDITTEXT        IDC_wafer_cmera_parameters_forward_x,71,85,118,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Seek forward  Y",IDC_STATIC,11,105,52,8
+    EDITTEXT        IDC_wafer_cmera_parameters_forward_y,71,103,118,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Seek backward X",IDC_STATIC,11,126,58,8
+    EDITTEXT        IDC_wafer_cmera_parameters_back_x,71,124,118,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Seek backward Y",IDC_STATIC,11,144,58,8
+    EDITTEXT        IDC_wafer_cmera_parameters_back_y,71,141,118,14,
+                    ES_AUTOHSCROLL
+END
+
+IDD_pick_place_parameters DIALOG DISCARDABLE  0, 0, 202, 147
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,100,110,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,48,110,50,14
+    GROUPBOX        "Pick and place process parameters",IDC_STATIC,7,3,186,
+                    131
+    LTEXT           "SMAC z clearance",IDC_STATIC,11,19,60,8
+    LTEXT           "SMAC delay (ms)",IDC_STATIC,11,37,54,8
+    LTEXT           "Grip air delay (ms)",IDC_STATIC,11,54,56,8
+    EDITTEXT        IDC_pick_place_parameters_smac_z_clearance,72,16,117,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_pick_place_parameters_smac_delay,72,34,117,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_pick_place_parameters_grip_air_delay,72,51,117,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Needle timer (ms)",IDC_STATIC,12,91,55,8
+    EDITTEXT        IDC_pick_place_parameters_needle_timer,71,88,118,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Grip close delay",IDC_STATIC,12,71,51,8
+    EDITTEXT        IDC_pick_place_parameters_grip_close_delay,72,68,117,14,
+                    ES_AUTOHSCROLL
+END
+
+IDD_fetcher_sequence_parameters DIALOG DISCARDABLE  0, 0, 320, 292
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,155,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,265,50,14
+    LTEXT           "Wafer X stage position ------------------------>",
+                    IDC_STATIC,7,21,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_stage_wafer_x,152,18,159,
+                    14,ES_AUTOHSCROLL
+    LTEXT           "Wafer Y stage position ------------------------>",
+                    IDC_STATIC,7,40,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_stage_wafer_y,152,36,159,
+                    14,ES_AUTOHSCROLL
+    LTEXT           "Fetcher position for stretcher --------------->",
+                    IDC_STATIC,7,58,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_fetcher_stretcher,152,55,
+                    159,14,ES_AUTOHSCROLL
+    LTEXT           "Wafer X pick position -------------------------->",
+                    IDC_STATIC,8,77,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_wafer_x_pick,152,73,159,
+                    14,ES_AUTOHSCROLL
+    LTEXT           "Wafer Y pick position -------------------------->",
+                    IDC_STATIC,8,96,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_wafer_y_pick,152,92,159,
+                    14,ES_AUTOHSCROLL
+    LTEXT           "Fetcher position in magazine --------------->",
+                    IDC_STATIC,8,113,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_fetcher_magazine,152,110,
+                    159,14,ES_AUTOHSCROLL
+    LTEXT           "Fetcher clear position -------------------------->",
+                    IDC_STATIC,8,132,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_fetcher_clear,152,128,
+                    159,14,ES_AUTOHSCROLL
+    LTEXT           "Increment between wafers in magazine ",IDC_STATIC,8,151,
+                    139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_magazine_increment,152,
+                    147,159,14,ES_AUTOHSCROLL
+    LTEXT           "Magazine position of first wafer ----------->",
+                    IDC_STATIC,8,168,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_magazine_origin,152,165,
+                    159,14,ES_AUTOHSCROLL
+    LTEXT           "Number of wafers in a magazine --------->",IDC_STATIC,8,
+                    188,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_magazine_capacity,152,
+                    184,159,14,ES_AUTOHSCROLL
+    LTEXT           "Fetcher position where wafer is justified",IDC_STATIC,8,
+                    207,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_fetcher_justify,152,203,
+                    159,14,ES_AUTOHSCROLL
+    LTEXT           "Wafer X justify position ------------------------>",
+                    IDC_STATIC,8,224,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_wafer_x_justify,152,221,
+                    159,14,ES_AUTOHSCROLL
+    LTEXT           "Wafer Y justify position ------------------------>",
+                    IDC_STATIC,8,242,139,8
+    EDITTEXT        IDC_fetcher_sequence_parameters_wafer_y_justify,152,239,
+                    159,14,ES_AUTOHSCROLL
+    GROUPBOX        "Fetcher sequence parameters",IDC_STATIC,1,4,315,283
+END
+
+IDD_DIALOG_machine_state DIALOG DISCARDABLE  0, 0, 289, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Current state"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,232,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,179,7,50,14
+    CONTROL         "It is necessary to change magazine",
+                    IDC_CHECK_magazine_is_ready,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,12,11,127,10
+    CONTROL         "Wafer is loaded",IDC_CHECK_wafer_is_loaded,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,24,65,10
+    LTEXT           "Position in magazine",IDC_STATIC,12,74,65,8
+    EDITTEXT        IDC_EDIT_machine_state_wafer_position,84,70,187,14,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Wafer current state",IDC_STATIC,6,59,276,70
+    CONTROL         "Chip is picked up",
+                    IDC_CHECK_machine_state_chip_is_picked_up,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,110,70,10
+    EDITTEXT        IDC_EDIT_machine_state_chip_position,83,88,188,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Current chip number",IDC_STATIC,11,91,64,8
+    LTEXT           "Wafer file name",IDC_STATIC,9,43,52,8
+    EDITTEXT        IDC_EDIT_machine_state_file_name,62,41,205,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_machine_state_file_name,269,41,13,14
+END
+
+IDD_DIALOG_error_log DIALOG DISCARDABLE  0, 0, 276, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Error log."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,102,183,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,183,35,14
+    EDITTEXT        IDC_EDIT_error_log,7,7,262,173,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIALOG_error_handle DIALOG DISCARDABLE  0, 0, 234, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error handle."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Retry",IDOK,66,67,50,14
+    PUSHBUTTON      "Ignore",IDCANCEL,118,67,50,14
+    EDITTEXT        IDC_EDIT_error_handle,7,7,220,53,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_DIALOG_bay_number DIALOG DISCARDABLE  0, 0, 350, 324
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bay number and Condition."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,298,7,45,14
+    PUSHBUTTON      "Cancel",IDCANCEL,299,24,44,14
+    CONTROL         "Bay 1",IDC_RADIO_bay_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,107,48,33,10
+    CONTROL         "Bay 2",IDC_RADIO_bay_2,"Button",BS_AUTORADIOBUTTON,107,
+                    62,33,10
+    CONTROL         "Bay 3",IDC_RADIO_bay_3,"Button",BS_AUTORADIOBUTTON,107,
+                    75,33,10
+    CONTROL         "Bay 4",IDC_RADIO_bay_4,"Button",BS_AUTORADIOBUTTON,107,
+                    89,33,10
+    PUSHBUTTON      "Pres here to choose the configuration",
+                    IDC_BUTTON_machine_config,20,13,198,31
+    EDITTEXT        IDC_EDIT1,9,113,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON3,209,114,19,14
+    EDITTEXT        IDC_EDIT2,9,133,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON4,209,133,19,14
+    EDITTEXT        IDC_EDIT3,9,159,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON5,209,159,19,14
+    EDITTEXT        IDC_EDIT4,9,179,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON6,209,179,19,14
+    EDITTEXT        IDC_EDIT5,9,202,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON7,209,202,19,14
+    EDITTEXT        IDC_EDIT6,9,222,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON8,209,222,19,14
+    EDITTEXT        IDC_EDIT7,9,247,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON9,209,247,19,14
+    EDITTEXT        IDC_EDIT8,9,268,197,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON10,209,268,19,14
+END
+
+IDD_product_type DIALOG DISCARDABLE  0, 0, 257, 156
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 12, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_product_type,74,30,176,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_bay_1_chip_type,7,104,243,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Check setup",IDCANCEL,19,128,98,14
+    DEFPUSHBUTTON   "System Product Run",IDOK,133,128,102,14
+    PUSHBUTTON      "Bay 1  Run",IDC_BUTTON_bay_1_status,7,52,243,29,
+                    BS_MULTILINE | NOT WS_TABSTOP
+    PUSHBUTTON      "Chip Type",IDC_EDIT_bay_1_chip_type_text,7,93,243,9,NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "Enter product type:",IDC_BUTTON_enter_product_type,7,30,
+                    66,13,NOT WS_TABSTOP
+    LTEXT           "Please enter product types for each bay of the system.",
+                    IDC_STATIC_product_type_1,18,7,172,8
+END
+
+IDD_status_screen DIALOG DISCARDABLE  0, 0, 457, 260
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,224,245,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,187,246,37,13
+    PUSHBUTTON      "System Status :                                                  ",
+                    IDC_STATIC_status_colored_9,40,32,157,15
+    PUSHBUTTON      "Operator :",IDC_STATIC_status_colored_12,40,86,54,15
+    PUSHBUTTON      "Running Bay :",IDC_STATIC_status_colored_10,263,32,64,
+                    15
+    PUSHBUTTON      "1",IDC_status_screen_bay_1_running,328,32,16,15
+    PUSHBUTTON      "Disabled Bays :",IDC_STATIC_status_colored_11,263,47,64,
+                    15
+    PUSHBUTTON      "1",IDC_status_screen_bay_1_stopped,328,47,16,15
+    PUSHBUTTON      "Product Type :",IDC_STATIC_status_colored_13,263,86,64,
+                    14
+    PUSHBUTTON      "Error Messages:",IDC_STATIC_status_colored_1,40,130,77,
+                    14
+    PUSHBUTTON      "Vision System:",IDC_STATIC_status_colored_3,135,130,54,
+                    14
+    PUSHBUTTON      "Motor Address#",IDC_STATIC_status_colored_4,337,130,55,
+                    14
+    PUSHBUTTON      "Magazine",IDC_STATIC_status_colored_5,259,130,39,14
+    EDITTEXT        IDC_status_screen_edit,40,144,372,97,ES_AUTOHSCROLL | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "N/A",IDC_status_screen_magazine_1,299,130,27,14,NOT 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_status_white_box_1,33,26,172,41,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_status_white_box_2,33,80,172,25,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_status_white_box_3,252,26,105,41,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_status_white_box_4,259,80,169,24,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_status_white_box_5,34,124,383,120,NOT WS_VISIBLE
+    EDITTEXT        IDC_status_screen_status,41,49,156,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_status_screen_operator,95,86,107,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_status_screen_product_type,328,86,97,15,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_status_screen_vision_system,189,130,57,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_status_screen_motor_address,393,131,18,13,
+                    ES_AUTOHSCROLL
+END
+
+IDD_setup_screen DIALOG DISCARDABLE  0, 0, 311, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,254,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,164,50,14
+    EDITTEXT        IDC_EDIT1,46,7,30,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Bay #",IDC_STATIC,8,11,20,8
+    LTEXT           "Fetcher:",IDC_STATIC,8,27,27,8
+    LTEXT           "Stretcher:",IDC_STATIC,8,50,32,8
+    LTEXT           "Overhead Gantry:",IDC_STATIC,7,76,57,8
+    LTEXT           "Plunge Up Mechanism",IDC_STATIC,7,100,82,8
+    LTEXT           "Wafer X,Y Table:",IDC_STATIC,7,122,56,8
+    LTEXT           "Vision System WAfer:",IDC_STATIC,7,142,83,8
+    LTEXT           "Vision System Base",IDC_STATIC,7,163,76,8
+    PUSHBUTTON      "Motor Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_fetcher,46,24,50,15
+    PUSHBUTTON      "Clamp Setup",IDC_BUTTON_setup_screen_fetcher_clamp,104,
+                    24,53,14
+    PUSHBUTTON      "Motor Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_stretcher,46,47,50,
+                    15
+    PUSHBUTTON      "X-Motor Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_overhead_gantry_x,69,
+                    73,58,15
+    PUSHBUTTON      "Y-Motor Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_overhead_gantry_y,
+                    132,73,61,15
+    PUSHBUTTON      "SMAC Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_overhead_gantry_smac,
+                    197,73,50,15
+    PUSHBUTTON      "Jaws / Vac",
+                    IDC_BUTTON_setup_screen_overhead_gantry_jaws,251,73,50,
+                    15
+    PUSHBUTTON      "Timing Setup",IDC_BUTTON_setup_screen_plunge_up_timing,
+                    100,96,61,14
+    PUSHBUTTON      "X-Motor Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_wafer_x,69,118,58,15
+    PUSHBUTTON      "Y-Motor Setup",
+                    IDC_BUTTON_setup_screen_motor_setup_wafer_y,135,118,61,
+                    15
+    PUSHBUTTON      "Calibration",IDC_BUTTON_setup_screen_vision_wafer,102,
+                    140,50,15
+    PUSHBUTTON      "Calibration",IDC_BUTTON_setup_screen_vision_base,102,
+                    159,50,15
+END
+
+IDD_user_list DIALOG DISCARDABLE  0, 0, 266, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "USERS  LIST"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,209,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,24,50,14
+    CONTROL         "List1",IDC_user_list_list,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,25,17,179,91
+    PUSHBUTTON      "Delete User",IDC_BUTTON_delete_user,55,124,50,14
+    PUSHBUTTON      "Edit User",IDC_BUTTON_edit_user,110,124,50,14
+    PUSHBUTTON      "Add User",IDC_BUTTON_add_user,168,124,50,14
+END
+
+IDD_CREATE_PRODUCT DIALOG DISCARDABLE  0, 0, 202, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter product type and chip type."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,101,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,46,74,50,14
+    LTEXT           "Product type :",IDC_STATIC,8,23,45,8
+    EDITTEXT        IDC_PRODUCT_ID,55,21,137,14,ES_AUTOHSCROLL
+    LTEXT           "Chip type :",IDC_STATIC,7,51,34,8
+    EDITTEXT        IDC_PRODUCT_NAME,55,50,137,14,ES_AUTOHSCROLL
+END
+
+IDD_Product_list DIALOG DISCARDABLE  0, 0, 310, 205
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,253,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,253,24,50,14
+    CONTROL         "List1",IDC_Product_list_list,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,9,9,239,143
+    PUSHBUTTON      "Delete Item",IDC_BUTTON_delete_Product,16,164,67,17
+    PUSHBUTTON      "Edit Item",IDC_BUTTON_edit_Product,90,164,67,17
+    PUSHBUTTON      "Add Item",IDC_BUTTON_add_Product,167,164,67,17
+END
+
+IDD_MANIPULATOR DIALOG DISCARDABLE  0, 0, 310, 58
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Motor manipulating window."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Address",IDC_STATIC,14,15,26,8
+    LTEXT           " <ALT> to activate; 1...9 -address; +/-  - to control position.",
+                    IDC_EDIT_MANIPULATOR_ADDRESS,48,15,205,8
+    LTEXT           "Position",IDC_STATIC,14,31,26,8
+    LTEXT           "",IDC_EDIT_MANIPULATOR_POSITION,50,31,175,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Blossom             ICON    DISCARDABLE     "icons\\BLOSSOM.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MainMenu MENU PRELOAD DISCARDABLE 
+BEGIN
+    MENUITEM "E&xit!",                      IDM_Exit
+    POPUP "Process"
+    BEGIN
+        MENUITEM "Start",                       IDM_PROC_START
+        MENUITEM "Suspend",                     IDM_PROC_SUSPEND
+        MENUITEM "Status Screen",               IDM_status_screen
+        MENUITEM "Login user and start operation", IDM_user_login
+        MENUITEM "Product list",                IDM_PRODUCT_LIST
+        MENUITEM "Initialize machine subsystems", IDM_INIT_MACHINE
+    END
+    POPUP "Diagnostic"
+    BEGIN
+        MENUITEM "Manipulate motors and I/O",   IDM_diagnostic
+        MENUITEM "smac tx event",               IDM_SMAC_TX
+        MENUITEM "Get Base Coordinates",        IDM_GetBaseCoord
+        MENUITEM "Motor manipulator",           IDM_MANIPULATOR
+        MENUITEM "Adjust wafer and camera # 1", IDM_WAFER_ADJUST
+    END
+    POPUP "Settings"
+    BEGIN
+        POPUP "Motor (Axes) parameters"
+        BEGIN
+            MENUITEM "Wafer Y (axis # 1)",          IDM_motor_parameters_1
+            MENUITEM "Wafer X (axis # 2)",          IDM_motor_parameters_2
+            MENUITEM "Gantry X (axis # 3)",         IDM_motor_parameters_3
+            MENUITEM "Gantry Y (axis # 4)",         IDM_motor_parameters_4
+            MENUITEM "Stretcher (axis # 5)",        IDM_motor_parameters_5
+            MENUITEM "Fetcher (axis # 6)",          IDM_motor_parameters_6
+            MENUITEM "Magazine (axis # 7)",         IDM_motor_parameters_7
+            MENUITEM "Chip griper Z (axis # 8)",    IDM_motor_parameters_8
+            MENUITEM "Chip griper rotation (axis # 9)", 
+                                                    IDM_motor_parameters_9
+            MENUITEM SEPARATOR
+            MENUITEM "Collect home strokes",        IDM_COLLECT_HOME_STROKES
+        END
+        MENUITEM "Fetcher sequence parameters", IDM_fetcher_sequence_parameters
+
+        MENUITEM "Pick and place process parameters", 
+                                                IDM_pick_place_parameters
+        MENUITEM "Pick point parameters",       IDM_pick_point_parameters
+        MENUITEM "Place point parameters",      IDM_place_piont_pirameters
+        MENUITEM "Wafer reference point parameters", 
+                                                IDM_wafer_reference_point_parameters
+
+        MENUITEM "Wafer camera parameters",     IDM_wafer_camera_parameters
+        POPUP "Base camera light levels calibration"
+        BEGIN
+            MENUITEM """Base is not on cart"" (black) level", IDM_BASE_BLACK
+            MENUITEM """Base is on cart"" (white) level", IDM_BASE_WHITE
+        END
+        MENUITEM SEPARATOR
+        POPUP "Settings file operation"
+        BEGIN
+            MENUITEM "Save settings",               IDM_save_settings
+            MENUITEM SEPARATOR
+            MENUITEM "Update from settings file",   IDM_Settings_update
+            MENUITEM "Recreate default settings file", IDM_Settings_Recreate
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Process current conditions",  IDM_process_current_conditions
+
+    END
+    POPUP "Users"
+    BEGIN
+        MENUITEM "Create new user",             ID_Create_new_user
+        MENUITEM "Delete User",                 ID_Delete_user
+        MENUITEM "Change User",                 IDM_change_user
+        MENUITEM "Change product type",         IDM_change_product_type
+        MENUITEM "Edit users list",             IDM_EDIT_USERS
+    END
+    POPUP "Map File"
+    BEGIN
+        MENUITEM "Open map file",               IDM_Read_from_menu
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       IDM_ABOUT
+        MENUITEM "window",                      IDM_window
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CLM control application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CLM\0"
+            VALUE "LegalCopyright", "Copyright © 1998,  Stelex, inc.\0"
+            VALUE "OriginalFilename", "APP.EXE\0"
+            VALUE "ProductName", "CLM Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_Diagnostic, DIALOG
+    BEGIN
+        HORZGUIDE, 124
+    END
+
+    IDD_CREATE_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    idd_very_common_dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_get_user, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_motor_parameters, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_pick_place_point, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_wafer_reference_point, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_base_cmera_parameters, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_wafer_camera_parameters, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_pick_place_parameters, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DIALOG_machine_state, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DIALOG_error_log, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_DIALOG_error_handle, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_DIALOG_bay_number, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 317
+    END
+
+    IDD_product_type, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_status_screen, DIALOG
+    BEGIN
+        HORZGUIDE, 32
+    END
+
+    IDD_setup_screen, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_user_list, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_CREATE_PRODUCT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_Product_list, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_MANIPULATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MessageBox          "This is a message box.  It is similar to a modal dialog.\nWould you like to see a simple modal dialog now?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SMAC_TX             "The intrnal chiploader command for communication test."
+    IDM_BASE_X              "Gantry x position for the packet."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+#include "afxres.rc"  	// Standard components
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

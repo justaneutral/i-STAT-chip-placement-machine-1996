@@ -1,0 +1,127 @@
+--------------------Configuration: App - Win32 Debug--------------------
+Begining build with project "C:\pdourbal\project\clm\App.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fr"Debug/" /Fp"Debug/App.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/mktyplib203 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"Debug/app.res" /i "..\include" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/App.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:yes /pdb:"Debug/app.pdb" /debug /machine:I386 /out:"..\bin\app.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP2D.tmp" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fr"Debug/" /Fp"Debug/App.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\pdourbal\project\clm\machina\machina.cpp"
+>
+Creating command line "cl.exe @C:\TEMP\RSP2D.tmp" 
+Creating temp file "C:\TEMP\RSP2E.tmp" with contents </nologo /subsystem:windows /incremental:yes /pdb:"Debug/app.pdb" /debug /machine:I386 /out:"..\bin\app.exe" 
+.\Debug\About.obj
+.\Debug\App.obj
+.\Debug\barcode.obj
+.\Debug\base_camera_parameters_dialog.obj
+.\Debug\bayState.obj
+.\Debug\ButtonColor.obj
+.\Debug\ColorStatic.obj
+.\Debug\console.obj
+.\Debug\ConsoleFake.obj
+.\Debug\CreateProduct.obj
+.\Debug\createUserDlg.obj
+.\Debug\Date.obj
+.\Debug\EditColor.obj
+.\Debug\errorHandle.obj
+.\Debug\errorLog.obj
+.\Debug\fetcher_sequence_parameters_dialog.obj
+.\Debug\fileAccess.obj
+.\Debug\FileTimeOutDialog.obj
+.\Debug\get_value_from_dialog.obj
+.\Debug\getuserDlg.obj
+.\Debug\IOBoard.obj
+.\Debug\machina.obj
+.\Debug\machineSettings.obj
+.\Debug\machineState.obj
+.\Debug\Mainfrm.obj
+.\Debug\Manipulator.obj
+.\Debug\motor_parameters_dialog.obj
+.\Debug\MotorManipulatorDlg.obj
+.\Debug\pick_place_parameters_dialog.obj
+.\Debug\pick_place_point_dialog.obj
+.\Debug\ProductListDlg.obj
+.\Debug\ProductTypeDlg.obj
+.\Debug\QCIAxes.obj
+.\Debug\QCICommands.obj
+.\Debug\serialPort.obj
+.\Debug\SetupScreenDlg.obj
+.\Debug\SMAC.obj
+.\Debug\StatusScreenDlg.obj
+.\Debug\Stdafx.obj
+.\Debug\UsersListDlg.obj
+.\Debug\very_common_dialog.obj
+.\Debug\vikingeditorDoc.obj
+.\Debug\Wafer.obj
+.\Debug\wafer_camera_parameters_dialog.obj
+.\Debug\wafer_reference_point_dialog.obj
+.\Debug\app.res
+..\commondll\Debug\commondll.lib
+.\qci\QCNTCLD.LIB>
+Creating command line "link.exe @C:\TEMP\RSP2E.tmp" 
+Compiling...
+machina.cpp
+C:\pdourbal\project\clm\machina\machina.cpp(948) : warning C4101: 'tar' : unreferenced local variable
+C:\pdourbal\project\clm\machina\machina.cpp(948) : warning C4101: 'i' : unreferenced local variable
+C:\pdourbal\project\clm\machina\machina.cpp(948) : warning C4101: 'camX' : unreferenced local variable
+C:\pdourbal\project\clm\machina\machina.cpp(948) : warning C4101: 'pos' : unreferenced local variable
+C:\pdourbal\project\clm\machina\machina.cpp(948) : warning C4101: 'camY' : unreferenced local variable
+Linking...
+Creating temp file "C:\TEMP\RSP2F.tmp" with contents </nologo /o"Debug/App.bsc" 
+.\Debug\Stdafx.sbr
+.\Debug\About.sbr
+.\Debug\App.sbr
+.\Debug\barcode.sbr
+.\Debug\base_camera_parameters_dialog.sbr
+.\Debug\bayState.sbr
+.\Debug\ButtonColor.sbr
+.\Debug\ColorStatic.sbr
+.\Debug\console.sbr
+.\Debug\ConsoleFake.sbr
+.\Debug\CreateProduct.sbr
+.\Debug\createUserDlg.sbr
+.\Debug\Date.sbr
+.\Debug\EditColor.sbr
+.\Debug\errorHandle.sbr
+.\Debug\errorLog.sbr
+.\Debug\fetcher_sequence_parameters_dialog.sbr
+.\Debug\fileAccess.sbr
+.\Debug\FileTimeOutDialog.sbr
+.\Debug\get_value_from_dialog.sbr
+.\Debug\getuserDlg.sbr
+.\Debug\IOBoard.sbr
+.\Debug\machina.sbr
+.\Debug\machineSettings.sbr
+.\Debug\machineState.sbr
+.\Debug\Mainfrm.sbr
+.\Debug\Manipulator.sbr
+.\Debug\motor_parameters_dialog.sbr
+.\Debug\MotorManipulatorDlg.sbr
+.\Debug\pick_place_parameters_dialog.sbr
+.\Debug\pick_place_point_dialog.sbr
+.\Debug\ProductListDlg.sbr
+.\Debug\ProductTypeDlg.sbr
+.\Debug\QCIAxes.sbr
+.\Debug\QCICommands.sbr
+.\Debug\serialPort.sbr
+.\Debug\SetupScreenDlg.sbr
+.\Debug\SMAC.sbr
+.\Debug\StatusScreenDlg.sbr
+.\Debug\UsersListDlg.sbr
+.\Debug\very_common_dialog.sbr
+.\Debug\vikingeditorDoc.sbr
+.\Debug\Wafer.sbr
+.\Debug\wafer_camera_parameters_dialog.sbr
+.\Debug\wafer_reference_point_dialog.sbr>
+Creating command line "bscmake.exe @C:\TEMP\RSP2F.tmp" 
+Creating browse info file...
+
+
+
+app.exe - 0 error(s), 5 warning(s)

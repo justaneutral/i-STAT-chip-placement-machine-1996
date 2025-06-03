@@ -1,0 +1,9 @@
+x 3.31395
+y 2.41465
+
+#define IDM_PACKET_FINDER2              40015
+#define IDM_HALL_COORDINATES            40016
+
+axis_is_hommed[9]
+home_distance[9]
+home_tolerance[9]

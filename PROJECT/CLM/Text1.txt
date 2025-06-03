@@ -1,0 +1,37 @@
+  	  Get_Fiducial_Point(
+	     g_machine->wafer_x + 
+		 (double)((long)(RowCount/2))*(theApp.map->YDieSize()) + 
+		 g_machine_state.m_camY /*x*/,
+
+		 g_machine->wafer_y + 
+		 (double)((long)(ColumnCount/2))*(theApp.map->XDieSize()) +
+		 g_machine_state.m_camX /*y*/
+		 
+		 );
+
+        
+		
+		
+		
+		g_Axes.InchPosition(tar[1]=wafer_zero_y - Ro*theApp.map->YDieSize()/*Y*/, 1);
+        g_Axes.InchPosition(tar[2]=wafer_zero_x - Co*theApp.map->XDieSize()/*X*/, 2);
+
+ -----------------------------
+
+		chip_pick_and_place(
+			    
+			g_machine->wafer_x + 
+			(double)((long)(RowCount/2 - Ro))*(theApp.map->YDieSize()) + 
+		    g_machine_state.m_camY /*x*/,
+
+
+		    g_machine->wafer_y + 
+			(double)((long)(ColumnCount/2 - Co))*(theApp.map->XDieSize()) +
+		    g_machine_state.m_camX /*y*/
+			
+			);
+
+
+
+        g_Axes.InchPosition(tar[1]=wafer_y, 1);
+        g_Axes.InchPosition(tar[2]=wafer_x, 2);

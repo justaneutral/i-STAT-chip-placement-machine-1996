@@ -1,0 +1,31 @@
+
+====================================================================================
+State               Command                    conditions            Next state           Reaction       Resulting conditions
+====================================================================================
+
+Turned off		    Program starts				                     Login
+------------------------------------------------------------------------------------
+Login   	        User login				  correct user	         Configuration
+------------------------------------------------------------------------------------
+Configuration       Change command                                   
+                    Start command	       configured,homed          Operation
+					User login										 Login
+					Home command                                   
+					Diagnostic command
+					Create user command                                                               
+											   error                 Error
+------------------------------------------------------------------------------------
+Operation           Pause command                                    Pause
+					Stop command             						 Configuration
+					                           error                 Error 
+------------------------------------------------------------------------------------
+Pause               Resume command                                   Operation                    
+                    Stop command                                     Configuration
+					Diagnostic command                               
+					                           error                 Error
+------------------------------------------------------------------------------------
+Error               Log error,stop.                                  configuration
+
+
+
+=====================================================================================

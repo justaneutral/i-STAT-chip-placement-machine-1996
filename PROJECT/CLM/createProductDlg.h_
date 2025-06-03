@@ -1,0 +1,47 @@
+#if !defined(AFX_CREATEPRODUCTDLG_H__5E9EE4E2_337F_11D1_9187_00C0F02195F6__INCLUDED_)
+#define AFX_CREATEPRODUCTDLG_H__5E9EE4E2_337F_11D1_9187_00C0F02195F6__INCLUDED_
+
+#if _MSC_VER >= 1000
+#pragma once
+#endif // _MSC_VER >= 1000
+// createProductDlg.h : header file
+//
+
+/////////////////////////////////////////////////////////////////////////////
+// createProductDlg dialog
+
+class createProductDlg : public CDialog
+{
+// Construction
+public:
+	createProductDlg(CWnd* pParent = NULL);   // standard constructor
+
+// Dialog Data
+	//{{AFX_DATA(createProductDlg)
+	enum { IDD = IDD_CREATE_PRODUCT };
+	CString	m_name;
+	CString	m_id;
+	//}}AFX_DATA
+
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(createProductDlg)
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	//}}AFX_VIRTUAL
+
+// Implementation
+protected:
+
+	// Generated message map functions
+	//{{AFX_MSG(createProductDlg)
+		// NOTE: the ClassWizard will add member functions here
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Developer Studio will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_CREATEPRODUCTDLG_H__5E9EE4E2_337F_11D1_9187_00C0F02195F6__INCLUDED_)

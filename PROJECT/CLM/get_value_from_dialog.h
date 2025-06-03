@@ -1,0 +1,1 @@
+double get_value_from_dialog(char *ParamName);

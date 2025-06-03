@@ -1,0 +1,45 @@
+// createProductDlg.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "app.h"
+#include "createProductDlg.h"
+
+#ifdef _DEBUG
+//#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// createProductDlg dialog
+
+
+createProductDlg::createProductDlg(CWnd* pParent /*=NULL*/)
+	: CDialog(createProductDlg::IDD, pParent)
+{
+	//{{AFX_DATA_INIT(createProductDlg)
+	m_name = _T("");
+	m_id = _T("");
+	//}}AFX_DATA_INIT
+}
+
+
+void createProductDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(createProductDlg)
+	DDX_Text(pDX, IDC_PRODUCT_NAME, m_name);
+	DDX_Text(pDX, IDC_PRODUCT_ID, m_id);
+	//}}AFX_DATA_MAP
+}
+
+
+BEGIN_MESSAGE_MAP(createProductDlg, CDialog)
+	//{{AFX_MSG_MAP(createProductDlg)
+		// NOTE: the ClassWizard will add message map macros here
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// createProductDlg message handlers

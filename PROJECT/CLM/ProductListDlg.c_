@@ -1,0 +1,153 @@
+// ProductListDlg.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "app.h"
+#include "ProductListDlg.h"
+#include "createProductDlg.h"
+
+#ifdef _DEBUG
+//#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// CProductListDlg dialog
+
+
+CProductListDlg::CProductListDlg(CWnd* pParent /*=NULL*/)
+	: CDialog(CProductListDlg::IDD, pParent)
+{
+	//{{AFX_DATA_INIT(CProductListDlg)
+		// NOTE: the ClassWizard will add member initialization here
+	//}}AFX_DATA_INIT
+}
+
+
+void CProductListDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(CProductListDlg)
+	DDX_Control(pDX, IDC_Product_list_list, m_list);
+	//}}AFX_DATA_MAP
+}
+
+
+BEGIN_MESSAGE_MAP(CProductListDlg, CDialog)
+	//{{AFX_MSG_MAP(CProductListDlg)
+	ON_BN_CLICKED(IDC_BUTTON_delete_Product, OnBUTTONdeleteProduct)
+	ON_BN_CLICKED(IDC_BUTTON_edit_Product, OnBUTTONeditProduct)
+	ON_BN_CLICKED(IDC_BUTTON_add_Product, OnBUTTONaddProduct)
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CProductListDlg message handlers
+
+BOOL CProductListDlg::OnInitDialog() 
+{
+	CDialog::OnInitDialog();
+	
+	m_list.DeleteAllItems();
+	
+	for(int i=0; i < ProductID.GetSize(); i++)
+	{
+	  	//sprintf(s,"%s\t%s",(LPCTSTR)((m_Product[i]).ChipName),
+		//	               (LPCTSTR)((m_Product[i]).ProductID));
+		m_list.InsertItem( i,(LPCTSTR)(ChipName[i]+_T(" ( ")+ProductID[i]+_T(" )")));
+	}
+
+	return TRUE;  // return TRUE unless you set the focus to a control
+	              // EXCEPTION: OCX Property Pages should return FALSE
+}
+
+
+
+void CProductListDlg::SaveProduct()
+{
+	CFile f;
+	BOOL b;
+	
+	b = f.Open("\\\\bay1\\c$\\Product.clm", CFile::modeCreate | CFile::modeWrite);
+	
+	if(b)
+	{
+	    CArchive a(&f,CArchive::store);
+		
+		ProductID.Serialize(a);
+		ChipName.Serialize(a);
+	}
+}
+
+void CProductListDlg::ReadProduct()
+{
+	CFile f;
+	BOOL b = FALSE;
+	
+	b = f.Open("\\\\bay1\\c$\\Product.clm",CFile::modeRead);	
+	if(b)
+	{
+		CArchive a(&f,CArchive::load);
+		ProductID.Serialize(a);
+		ChipName.Serialize(a);
+	}
+}
+
+void CProductListDlg::OnBUTTONdeleteProduct() 
+{	
+	for(int i=0; i < ProductID.GetSize(); i++)
+	 if(m_list.GetItemState(i,LVIS_SELECTED))
+	 {
+		m_list.DeleteItem(i);
+		
+		ProductID.RemoveAt(i,1);
+		ChipName.RemoveAt(i,1);
+		
+		return;
+	 }
+}
+
+
+
+
+
+void CProductListDlg::OnBUTTONeditProduct() 
+{
+	for(int i=0; i < ProductID.GetSize(); i++)
+	 if(m_list.GetItemState(i,LVIS_SELECTED))
+	 {
+		//get product data from the Product set.
+		createProductDlg cpdlg;
+		cpdlg.m_id               = ProductID[i];
+		cpdlg.m_name             = ChipName[i];
+
+		if(cpdlg.DoModal() == IDOK && 
+                   cpdlg.m_id != _T("")    && 
+                   cpdlg.m_name != _T(""))
+                {
+		  //update Product data.
+		  ProductID[i]    = cpdlg.m_id;
+		  ChipName[i]     = cpdlg.m_name;
+		  m_list.SetItemText(i,0,(LPCTSTR)(ChipName[i]+_T(" ( ")+ProductID[i]+_T(" )")));
+                }
+	        return;
+         }
+}
+
+void CProductListDlg::OnBUTTONaddProduct() 
+{
+	createProductDlg cpdlg;
+	cpdlg.m_id               = _T("");
+	cpdlg.m_name             = _T("");
+	
+	if(cpdlg.DoModal() == IDOK)
+	  if(cpdlg.m_id != _T("") && cpdlg.m_name != _T(""))
+	  {
+		  
+  		  ProductID.Add(cpdlg.m_id);
+		  ChipName.Add(cpdlg.m_name);
+		  m_list.InsertItem(m_list.GetItemCount(),
+			      (LPCTSTR)(cpdlg.m_name+_T("  ")+cpdlg.m_id));
+	  }
+}

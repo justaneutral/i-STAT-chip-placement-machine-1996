@@ -1,0 +1,24 @@
+md0,mf,ph0,ff
+md1,1pm,sq32767,wa1000,al1,ar3,al0,ar75,dm,br9600
+md2,mg"Homming procedure"
+md3,fr3,sg250,si300,sd1000,il5000,se5000,sq32767,ss2,ri1
+md4,1vm,sv100000,sa500000,se10000,mn,fi
+md5,1di1,go,rl448,is1,no,mj101,wa100
+md6,rl448,ic10,st,mj9,rw538,ib-500,no,mj7,mj6
+md7,1di0,go,rl448,is1,no,mj101,wa100,ra3,aa1,ar3,ig4,mf,mj101
+md8,rl448,ic10,st,mj9,rw538,ig500,no,mj5,mj8
+md9,mc200,mg"Linear axis ready",pm,se5000,dh,ws400
+md10,2sq32767,al1,ar3,ph0
+md11,fr1,sg800,sd2000,si600,il5000
+md12,2qm0,dh0,mn,sq-32767
+md13,rl638,wa50,ib-50,no,mj16,ra3,aa1,ar3,ig30,sq0,mj14,mj13
+md14,al1,ar3,wa200,dh,mn,sq32767
+md15,rl638,wa50,ig50,no,mj16,ra3,aa1,ar3,ig30,sq0,mj100,mj15
+md16,2sq5000,fe
+md17,rl592,is13,st,mj18,mj17
+md18,mg"Rotary axis home",pm,se5000,dh
+md19,sv1000000,sa1000000
+md100,mg"Servo fault--check cabels",wa1000,ep
+md101,mf,mg"Servo error: Bad cable, coil, or encoder",ep
+md102,mf,mg"Cannot find index",ep
+md200,1pm,ma3000,go,wa100,rc
